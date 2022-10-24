@@ -1,0 +1,99 @@
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/37_38_MA/Stamatova/
+[ec2-user@ip-172-31-33-20 Stamatova]$ bash sleeper.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Mon Oct 24 16:02:17 UTC 2022
+date: extra operand ‘%H:%M:%S’
+Try 'date --help' for more information.
+117
+NAME="Amazon Linux"
+VERSION="2"
+ID="amzn"
+ID_LIKE="centos rhel fedora"
+VERSION_ID="2"
+PRETTY_NAME="Amazon Linux 2"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2"
+HOME_URL="https://amazonlinux.com/"
+NAME="Amazon Linux"
+"Amazon
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+
+nano sleeper.sh
+for run in {1..10}
+do
+echo $run
+#sleep 5
+sleep 2
+done
+date
+date + "%H:%M:%S"
+ps -e | wc -l
+cat /etc/os-release
+cat /etc/os-release | grep -w NAME
+cat /etc/os-release | grep -w NAME | awk '{print $1}' | sed 's/NAME=//'
+for touch in {50..100}
+do
+echo $touch
+done
+
+
+
